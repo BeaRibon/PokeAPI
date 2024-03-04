@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./img/pokebola.png" type="image/x-icon">
+</head>
+
+<body>
+    <script src="./index.js" defer></script>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div div="história">
+                <p id="title">História do Pokémon</p>
+                <p id="texthis">A série animada Pokémon estreou em 1997, seguindo as aventuras de Ash Ketchum, um jovem treinador de
+                    Pokémon, e seu parceiro Pikachu. A série segue Ash em sua jornada para se tornar um Mestre Pokémon,
+                    enfrentando diversos desafios, ginásios de líderes de ginásio, e enfrentando a Equipe Rocket, um
+                    grupo vilanesco que tenta roubar Pokémon.</p>
+            </div>
+            <img src="./img/pikachu-pokemon.gif" class="gifhistoria">
+            <span class="close">&times;</span>
+        </div>
+    </div>
+
+    <header>
+        <div class="nav">
+            <img src="./img/logo.jpg" class="logo">
+            <button class="btn" id="openModal" onclick="modal()">Histópokemon</button>
+        </div>
+    </header>
+    <main>
+        <form action="" class="form">
+            <label>
+                <input type="text" placeholder="Nome do pokémon ou ID" class="input">
+                <button class="btnpes" onclick="pokemon()">Pesquisar</button>
+            </label>
+        </form>
+
+        <section class="inf">
+            <p id="name"></p>
+            <p id="ability"></p>
+            <p id="experi"></p>
+            <p id="elements"></p>
+
+            <img id="img">
+            <button class="btnpes" id="btn" onclick="favorite()">Adicionar aos favoritos</button>
+
+        </section>
+
+        <section class="fav">
+            <p class="fav">FAVORITOS</p>
+        </section>
+    <section>
+        <ul class="slides-list" >
+          
+
+        </ul>
+    </section>
+    </main>
+</body>
+
+</html>
